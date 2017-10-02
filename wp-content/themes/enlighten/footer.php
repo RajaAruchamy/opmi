@@ -55,7 +55,7 @@ $enlighten_footer_style = esc_attr(get_theme_mod('enlighten_menu_style'));
                 <?php 
                 $enlighten_footer_text = get_theme_mod('enlighten_footer_text');
                 if( get_theme_mod('enlighten_footer_text_disable') != '1' && $enlighten_footer_text ){
-                        echo enlighten_esc_footer_copyright($enlighten_footer_text). " | ";
+                        echo enlighten_esc_footer_copyright($enlighten_footer_text);
                 } 
 /* 
               printf( esc_html__( 'WordPress Theme: %s', 'enlighten' ) ,'<a target="_blank" href="https://accesspressthemes.com/wordpress-themes/enlighten/">Enlighten</a>' ); */
