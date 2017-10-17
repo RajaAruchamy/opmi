@@ -23,10 +23,10 @@
 define('DB_NAME', 'opmi');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'opmi');
 
 /** MySQL database password */
-define('DB_PASSWORD', '2j9KrfNhti8uGTpY');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

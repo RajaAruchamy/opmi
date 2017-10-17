@@ -1,0 +1,26 @@
+.wpm-language-switcher {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  a {
+    color: lighten($black, 20%);
+
+    &:hover {
+      color: $black;
+    }
+
+    img {
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+
+  .active {
+
+    a {
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}

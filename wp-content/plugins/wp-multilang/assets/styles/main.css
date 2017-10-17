@@ -1,0 +1,16 @@
+.wpm-language-switcher {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .wpm-language-switcher a {
+    color: #333333; }
+    .wpm-language-switcher a:hover {
+      color: #000; }
+    .wpm-language-switcher a img {
+      display: inline-block;
+      margin-right: 3px; }
+  .wpm-language-switcher .active a {
+    color: #fff;
+    font-weight: 600; }
+
+/*# sourceMappingURL=main.css.map */

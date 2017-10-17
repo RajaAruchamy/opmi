@@ -14,7 +14,10 @@ if($enlighten_news_slider_cat){
         <div class="ak-container">
             <div class="news_slide_wrap wow fadeInUp">
                 <?php if($enlighten_news_slider_title){ ?>
-                    <div class="news_slider_title"><?php echo esc_html($enlighten_news_slider_title); ?></div>
+                    <div class="news_slider_title"><?php echo esc_html($enlighten_news_slider_title); ?><img src="http://localhost/opmi/wp-content/uploads/2017/10/earth-spinning-rotating-animation-14.gif" style="
+    max-width: 75px;
+    padding: 0 10px;
+"></div>
                     <?php } ?> 
                     <ul class="news_slide"> <?php
                         while($enlighten_news_slider_query->have_posts()):

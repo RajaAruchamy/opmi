@@ -116,6 +116,6 @@
 	</header><!-- #masthead -->
 
     <!-- Header Banner -->
-    <?php do_action('enlighten_header_banner'); ?>
+    <?php do_action('enlighten_header_banner'); ?> 
 
 	<div id="content" class="site-content">
