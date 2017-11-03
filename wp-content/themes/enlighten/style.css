@@ -282,11 +282,11 @@ ul {
 ol,
 ol li
  {
-	list-style: decimal;
+	list-style: upper-roman;
 }
 li > ul, li > ol {
-	margin-bottom: 0;
-	margin-left: 15px;
+	margin-bottom: 30px;
+	margin-left: 70px;
 }
 dt {
 	font-weight: bold;
@@ -421,6 +421,9 @@ a:focus {
 a:hover, a:active {
 	outline: 0;
 }
+
+
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -441,7 +444,7 @@ a:hover, a:active {
 	position: relative;
 }
 .main-navigation ul > li > a {
-	padding: 21px 20px 18px;
+	padding: 15px 20px 15px;
 	-webkit-transition: all 500ms ease 0s;
 	-moz-transition: all 500ms ease 0s;
 	-o-transition: all 500ms ease 0s;
@@ -505,6 +508,7 @@ a:hover, a:active {
 .main-navigation li.focus > a {
 	font-weight:800;
 	background-color: #336eab;
+	border-bottom: 4px solid white;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul{
@@ -521,7 +525,8 @@ a:hover, a:active {
 .main-navigation .current_page_ancestor > a, 
 .main-navigation .current-menu-ancestor > a {
 	font-weight:800;
-	background-color: #336eab;
+	background-color: #336eab;	
+	border-bottom: 4px solid white;
 }
 /* Small menu. */
 .menu-toggle,
@@ -566,6 +571,145 @@ a:hover, a:active {
 	text-align: right;
 	width: 50%;
 }
+
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:19px;
+  font-weight: 400;
+  padding:10px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:10px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:15px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+/*--------------------------------------------------------------
+# table end
+--------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -905,6 +1049,12 @@ header.site-header {
 	background: #333;
 	z-index: 0;
 }
+}
+.info_wrap{
+	line-height: 25px;
+}
+.info_wrap span.fa_icon_info {
+	padding-right:10px;
 }
 .logo_info_wrap .header-logo-container .site-header-logo {
 	margin-top: 0;
@@ -1249,7 +1399,7 @@ display:block;
 	font-family: 'Titillium Web', sans-serif;
 	padding:0px 0 20px;
 	text-transform:uppercase;
-	font-weight:400;
+	font-weight:600;
 	display: block;
 }
 .portfolio_slider_wrap .anchor_title_wrap a:hover{
@@ -1523,7 +1673,7 @@ margin-top: 10px;
     vertical-align: middle;
     line-height: 60px;
     text-align: right;
-	border-right: 1px solid #f5c083;
+	border-right: 1px solid #2d7fc7;
     padding: 10px 30px;
 }
 #section_cta .title_description{
@@ -3236,8 +3386,9 @@ ul#follow_us_contacts li .icon-google:before {
     content: '\f0d5';
 }
 
-ul#follow_us_contacts li .icon-instgram:before {
-    content: '\f16d';}
+ul#follow_us_contacts li .icon-instagram:before {
+    content: '\f16d';
+}
 ul#follow_us_contacts li a i:before {
 	font-family: FontAwesome;
     font-style: normal;
@@ -3378,4 +3529,180 @@ ul#follow_us_contacts li a:hover i {
 }
 .contact-form-wrap .ufbl-form-field .ufbl-form-textarea{
 	width: 100% !important;
+}
+
+
+/*--------------------------------------------------------------
+## Academics
+--------------------------------------------------------------*/
+
+.module-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.module-card {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.39);
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-card-logo {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.39);
+  min-width: 20%;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15%;
+}
+
+
+.module-card-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
+}
+
+.module-card-img {
+  margin: 20px 0;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.module-card-button {
+  background: #182654;
+  color: white;
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+  box-shadow: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.module-card-button:hover {
+
+	box-shadow: none;
+	background: white;
+	color: #182654;
+	border: 1px solid #182654;
+
+}
+
+.module-card .title_content_wrap{
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(45, 127, 199, 0.05);
+}
+
+.module-card .anchor_title_wrap a {
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+}
+
+.module-card .anchor_title_wrap a:hover {
+    color: #2d7fc7;
+}
+@media screen and (min-width: 600px) {
+  .module-card {
+    width: 30%;
+    margin: 0 auto 2%;
+    min-width: 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+## Academics End
+--------------------------------------------------------------*/
+
+#form-main{
+	width:100%;
+	float:right;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(21, 20, 20, 0.76);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: right;
+	right: 0;
+	color:white;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  z-index:2;
+}
+
+#form-div input{
+	width:100%;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    line-height: 150%;
+    resize:vertical;
+    margin-top: 5px;
+}
+
+
+#button-blue{
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	box-shadow:none;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding:8px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+
+@media only screen and (max-width: 768px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+		display: none;
+	}
 }

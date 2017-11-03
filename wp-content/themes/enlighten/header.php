@@ -105,9 +105,10 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'menu-menu-1-container mmenu-wrapper' ) ); ?>
             </div>
 		</nav><!-- #site-navigation -->
-        
+        <?php  ?>
         <?php 
             if(is_home() || is_front_page()){
+                echo do_shortcode( '[contact-form-7 id="790" title=":encontact us"]' );
                 $enlighten_slider_enable = get_theme_mod('enlighten_enable_slider');
                 if($enlighten_slider_enable){
                     do_action('enlighten_header_slider_action');
