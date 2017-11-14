@@ -99,22 +99,22 @@ class enlighten_info extends WP_Widget {
                                 <span class="location"><?php echo esc_attr($enlighten_location); ?></span>
                             </div>
                         <?php } ?>
-                        <?php if($enlighten_phome){ ?>
-                            <div class="phone_info">
-                                <span class="fa_icon_info"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                <span class="phone"><?php echo esc_attr($enlighten_phome); ?></span>
+                        <?php if($enlighten_email){ ?>
+                            <div class="email_info">
+                                <span class="fa_icon_info"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                <span class="email"><?php echo esc_attr($enlighten_email); ?></span>
                             </div>
                         <?php } ?>
                         <?php if($enlighten_fax){ ?>
                             <div class="fax_info">
                                 <span class="fa_icon_info"><i class="fa fa-fax" aria-hidden="true"></i></span>
                                 <span class="fax"><?php echo esc_attr($enlighten_fax); ?></span>
-                            </div>
+                            </div>                        
                         <?php } ?>
-                        <?php if($enlighten_email){ ?>
-                            <div class="email_info">
-                                <span class="fa_icon_info"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                <span class="email"><?php echo esc_attr($enlighten_email); ?></span>
+                        <?php if($enlighten_phome){ ?>
+                            <div class="phone_info">
+                                <span class="fa_icon_info"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <span class="phone"><?php echo esc_attr($enlighten_phome); ?></span>
                             </div>
                         <?php } ?>
                     </div>
